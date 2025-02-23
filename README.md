@@ -40,7 +40,7 @@ A dual-interface project for AI prompt analysis and chatbot interactions, powere
   
 3. **Environment Setup**
    
-        Create .env file with your Azure credentials:
+      Create .env file with your Azure credentials:
     
         AZURE_OAI_ENDPOINT=<your-endpoint>
         
@@ -52,9 +52,9 @@ A dual-interface project for AI prompt analysis and chatbot interactions, powere
 
 1. **Context Files**
 
-        system.txt: Define AI's base personality/role
-        
-        grounding.txt: Add conversation context/constraints
+      system.txt: Define AI's base personality/role
+      
+      grounding.txt: Add conversation context/constraints
 
 2. **Project Structure**
 
@@ -80,9 +80,9 @@ A dual-interface project for AI prompt analysis and chatbot interactions, powere
 1. **Web Chat Interface**
 
         uvicorn app:app --reload
-        
-        #Open index.html in browser
-        
+      
+      #Open index.html in browser
+      
         python -m http.server 3000  # Optional simple server
 
 2. **CLI Prompt Engineering Tool**
@@ -91,17 +91,17 @@ A dual-interface project for AI prompt analysis and chatbot interactions, powere
 
 ## Customization
 
-    Adjust AI Parameters: Modify temperature and max_tokens in both app.py and prompt-engineering.py
-    
-    Style Customization: Edit styles.css for visual changes
-    
-    API Configuration: Update .env file with different Azure credentials
+  Adjust AI Parameters: Modify temperature and max_tokens in both app.py and prompt-engineering.py
+  
+  Style Customization: Edit styles.css for visual changes
+  
+  API Configuration: Update .env file with different Azure credentials
 
 ## Contributing
-    Contributions welcome! Please follow these steps:
-    
-    Fork the repository
-    
-    Create a feature branch
-    
-    Submit a pull request
+  Contributions welcome! Please follow these steps:
+  
+  Fork the repository
+  
+  Create a feature branch
+  
+  Submit a pull request
