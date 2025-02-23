@@ -53,12 +53,19 @@ grounding.txt: Add conversation context/constraints
 
 
 ├── app.py               # FastAPI backend
+
 ├── prompt-engineering.py # CLI testing tool
+
 ├── script.js           # Frontend logic
+
 ├── index.html          # Chat interface
+
 ├── styles.css          # UI styling
+
 ├── system.txt          # AI system prompt
+
 ├── grounding.txt       # Conversation context
+
 └── .env                # Configuration secrets
 
 ##Usage
