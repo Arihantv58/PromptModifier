@@ -30,78 +30,78 @@ A dual-interface project for AI prompt analysis and chatbot interactions, powere
 
 1. **Clone Repository**
    
-git clone https://github.com/Arihantv58/PromptModifier.git
+        git clone https://github.com/Arihantv58/PromptModifier.git
+        
+        cd PromptAnalyzer
 
-cd PromptAnalyzer
+2. **Install Python Dependencies**
 
-3. **Install Python Dependencies**
-
-pip install fastapi uvicorn python-dotenv openai
-
-5. **Environment Setup**
+        pip install fastapi uvicorn python-dotenv openai
+  
+3. **Environment Setup**
    
-Create .env file with your Azure credentials:
-
-AZURE_OAI_ENDPOINT=<your-endpoint>
-
-AZURE_OAI_KEY=<your-key>
-
-AZURE_OAI_DEPLOYMENT=<deployment-name>
+        Create .env file with your Azure credentials:
+    
+        AZURE_OAI_ENDPOINT=<your-endpoint>
+        
+        AZURE_OAI_KEY=<your-key>
+        
+        AZURE_OAI_DEPLOYMENT=<deployment-name>
 
 ## Configuration
 
 1. **Context Files**
 
-system.txt: Define AI's base personality/role
-
-grounding.txt: Add conversation context/constraints
+        system.txt: Define AI's base personality/role
+        
+        grounding.txt: Add conversation context/constraints
 
 2. **Project Structure**
 
 
-├── app.py               # FastAPI backend
-
-├── prompt-engineering.py # CLI testing tool
-
-├── script.js           # Frontend logic
-
-├── index.html          # Chat interface
-
-├── styles.css          # UI styling
-
-├── system.txt          # AI system prompt
-
-├── grounding.txt       # Conversation context
-
-└── .env                # Configuration secrets
+    ├── app.py                     # FastAPI backend
+    
+    ├── prompt-engineering.py       # CLI testing tool
+    
+    ├── script.js                   # Frontend logic
+    
+    ├── index.html                  # Chat interface
+    
+    ├── styles.css                  # UI styling
+    
+    ├── system.txt                  # AI system prompt
+    
+    ├── grounding.txt               # Conversation context
+    
+    └── .env                        # Configuration secrets
 
 ##Usage
 
 1. **Web Chat Interface**
 
-uvicorn app:app --reload
-
-#Open index.html in browser
-
-python -m http.server 3000  # Optional simple server
+        uvicorn app:app --reload
+        
+        #Open index.html in browser
+        
+        python -m http.server 3000  # Optional simple server
 
 2. **CLI Prompt Engineering Tool**
 
-python prompt-engineering.py
+        python prompt-engineering.py
 
 ## Customization
 
-Adjust AI Parameters: Modify temperature and max_tokens in both app.py and prompt-engineering.py
-
-Style Customization: Edit styles.css for visual changes
-
-API Configuration: Update .env file with different Azure credentials
+    Adjust AI Parameters: Modify temperature and max_tokens in both app.py and prompt-engineering.py
+    
+    Style Customization: Edit styles.css for visual changes
+    
+    API Configuration: Update .env file with different Azure credentials
 
 ## Contributing
-Contributions welcome! Please follow these steps:
-
-Fork the repository
-
-Create a feature branch
-
-Submit a pull request
+    Contributions welcome! Please follow these steps:
+    
+    Fork the repository
+    
+    Create a feature branch
+    
+    Submit a pull request
