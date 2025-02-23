@@ -29,20 +29,27 @@ A dual-interface project for AI prompt analysis and chatbot interactions, powere
 ## Installation
 
 1. **Clone Repository**
-git clone https://github.com/<your-username>/PromptAnalyzer.git
+   
+git clone https://github.com/Arihantv58/PromptModifier.git
+
 cd PromptAnalyzer
 
-2. **Install Python Dependencies**
+3. **Install Python Dependencies**
+
 pip install fastapi uvicorn python-dotenv openai
 
-3. **Environment Setup**
+5. **Environment Setup**
+   
 Create .env file with your Azure credentials:
 
 AZURE_OAI_ENDPOINT=<your-endpoint>
+
 AZURE_OAI_KEY=<your-key>
+
 AZURE_OAI_DEPLOYMENT=<deployment-name>
 
 ## Configuration
+
 1. **Context Files**
 
 system.txt: Define AI's base personality/role
@@ -69,11 +76,13 @@ grounding.txt: Add conversation context/constraints
 └── .env                # Configuration secrets
 
 ##Usage
+
 1. **Web Chat Interface**
 
 uvicorn app:app --reload
 
 #Open index.html in browser
+
 python -m http.server 3000  # Optional simple server
 
 2. **CLI Prompt Engineering Tool**
@@ -81,6 +90,7 @@ python -m http.server 3000  # Optional simple server
 python prompt-engineering.py
 
 ## Customization
+
 Adjust AI Parameters: Modify temperature and max_tokens in both app.py and prompt-engineering.py
 
 Style Customization: Edit styles.css for visual changes
